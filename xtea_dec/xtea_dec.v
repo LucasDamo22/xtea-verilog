@@ -16,9 +16,6 @@ localparam  S_WAITING = 3'B000,
         S_DEC_PHASE_2 = 3'B011,
               S_READY = 3'B100;
 
-
-
-//wire [31:0] valor0, valor1;
 reg ready_int, dec_done;
 reg [2:0] EA;
 reg [6:0] count;

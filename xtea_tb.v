@@ -19,12 +19,12 @@ initial begin
     enc_dec = 1;
     key = 128'hDEADBEEF89ABCDEF01234567DEADBEEF;
     #10 reset = 0;
-    //data_in = 128'h4D932AB3CE76E4F22555F334089975E9;
-    data_in = 128'hAAAABBBBCCCCDDDDAAAABBBBCCCCDDDD;
+    data_in = 128'h4D932AB3CE76E4F22555F334089975E9;
+    //data_in = 128'hAAAABBBBCCCCDDDDAAAABBBBCCCCDDDD;
     #10 start = 1;
     #10 start = 0;
     #45 
-    // 128'hAAAABBBBCCCCDDDDAAAABBBBCCCCDDDD;
+    
     forever #5 data_in = data_out;
 end
 always@(posedge clock) begin

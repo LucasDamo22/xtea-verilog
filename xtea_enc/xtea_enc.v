@@ -70,7 +70,6 @@ always @(posedge clock or posedge reset) begin
                 EA <= S_ENC_SUM;
             end
             S_ENC_SUM: begin
-                //EA <= s_wait2;
                 EA <= S_ENC_PHASE_2;
             end
             S_ENC_PHASE_2: begin
